@@ -1,6 +1,0 @@
-lower=input("밑변을 입력하시오.")
-upper=input("윗변을 입력하시오.")
-height=input("높이를 입력하시오.")
-trapezoid_area=(int(lower) + int(upper))/2*int(height)
-print("사다리꼴의 면적 =",trapezoid_area)
-
