@@ -3,4 +3,7 @@ text = "Apple"
 
 print('입력한 문자는 "{}"입니다'.format(text))
 print(len(text))
-print(text.upper(1,1))
+print(text.upper())
+
+print(5 * 20)
+print("5" * 20)
