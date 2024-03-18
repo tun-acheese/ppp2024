@@ -3,4 +3,4 @@ text = "Apple"
 
 print('입력한 문자는 "{}"입니다'.format(text))
 print(len(text))
-print(text.upper())
+print(text.upper(1,1))
