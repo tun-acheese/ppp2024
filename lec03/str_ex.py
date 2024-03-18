@@ -7,3 +7,4 @@ print(text.upper())
 
 print(5 * 20)
 print("5" * 20)
+pritn("=" * 30)
