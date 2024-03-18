@@ -7,4 +7,7 @@ print(text.upper())
 
 print(5 * 20)
 print("5" * 20)
-pritn("=" * 30)
+print("=" * 30)
+
+print(text[:3])
+print(text[-2:])
