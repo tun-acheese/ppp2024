@@ -2,7 +2,7 @@ import math
 weight=input("몸무게를 입력하시오.")
 height=input("키를 입력하시오.")
 BMI=int(weight)/(int(height)/100)*(int(height)/100)
-   print("BMI=",BMI)
+print("BMI=",BMI)
     
 if BMI<23:
   print("비만 의심 증상이 없습니다.")
@@ -14,3 +14,5 @@ elif 30<=BMI and BMI <=34.9:
  print("2단계 비만")
 else:
  print("3단계 비만")
+
+
