@@ -1,26 +1,12 @@
-#1-10까지 합
+import math
 
-total = 0
+degrees = [0,30,45,60,90]
 
-total = 1+2+3+4+5+6+7+8+9+10
+for de in degrees:
+    a = math.sin(math.pi * (de / 180))
+    b = math.cos(math.pi * (de / 180))
+    c = math.tan(math.pi * (de / 180))
 
-total = total + 1
-total = total + 2
-total = total + 3
-total = total + 4
-total = total + 5
-total = total + 6
-total = total + 7
-total = total + 8
-total = total + 9
-total = total + 10
-
-print(f"1부터 10까지 합은 {total}입니다.")
-
-total=0
-for i in range(10):
-    total = totla +(i+1)
-
-print(f"1부터 10까지 합은 {total1}입니다.")
-print(f"1부터 10까지 합은 {total2}입니다.")
-print(f"1부터 10까지 합은 {total3}입니다.")
+    print(f"sin({de:2d}) : {a:.4f}")
+    print(f"cos({de:2d}) : {a:.4f}")
+    print(f"tan({de:2d}) : {a:.4f}")
