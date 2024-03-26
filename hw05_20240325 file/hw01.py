@@ -10,5 +10,7 @@ def main():
         print("섭취한 딸기의 칼로리는",amount*kcal_dictionary["strawberry"],"kcal입니다.")
     else eat == "": "strawberry":
         print("섭취한 바나나의 칼로리는",amount*kcal_dictionary["banana"],"kcal입니다.")
+    for k,v in  kcal-dictionary.items()
+        print(k,v)
 if_name_=="_main_":
 main()
