@@ -1,5 +1,5 @@
 
-##반복문과 사전을 어떻게 사용해야 하는지 모르겠어요... 
+##반복문을 어떻게 사용해야 하는지 모르겠어요... 
 def main():
     kcal-dictionary = {"hallabong":50, "strawberry":34, "banana":77}
     eat = input("한라봉(hallbong),딸기(strawverry), 바나나(banana) 중 먹은 것을 영어로 작성해주세요.")
