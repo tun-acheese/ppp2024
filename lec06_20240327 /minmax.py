@@ -1,5 +1,7 @@
 def minmax(nums):
-    pass
+    max_num = max(nums)
+    min_num = min(nums)
+    return min_num, max_num
 
 def main():
     nums = [3, 5, 7, 4, 10, 2]
