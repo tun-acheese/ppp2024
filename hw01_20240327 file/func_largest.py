@@ -1,5 +1,14 @@
-def largest (a,b,c,):
-    pass
+def largest(a,b,c,):
+    if a >b:
+        if a>c:
+            return a 
+        else:
+            return c
+    else: # a <= b
+        if b > c:
+            return b
+        else:
+            return c
 
 def main():
     x1 = 5
