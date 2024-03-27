@@ -8,7 +8,7 @@ def main():
 
     largest_num = largest(x1, X2, X3)
 
-    print(f"가장 큰 수는{largest_num}입니다.
+    print(f"가장 큰 수는{largest_num}입니다.")
           
 if_name_=="_main_":
     main()
