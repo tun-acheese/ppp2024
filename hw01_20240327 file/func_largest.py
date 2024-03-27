@@ -1,3 +1,4 @@
+# 첫번째 방법
 def largest(a,b,c,):
     if a >b:
         if a>c:
@@ -21,3 +22,28 @@ def main():
           
 if __name__=="__main__":
     main()
+
+    #2번째 방법
+    def largest(a,b,c):
+        largest_num = a
+
+    if a > b:
+        if a > c:
+            largest_num = a 
+        else:
+            largest_num = c
+    else: # a <= b
+        if b > c:
+             largest_num =b
+        else:
+            largest_num = c
+
+            return largest_num
+       
+
+def main():
+    x1 = 5
+    X2 = 7
+    X3 = 3
+
+    largest_num = largest(x1, X2, X3)
