@@ -10,5 +10,5 @@ def main():
 
     print(f"가장 큰 수는{largest_num}입니다.")
           
-if_name_=="_main_":
+if __name__=="__main__":
     main()
