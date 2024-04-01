@@ -1,5 +1,9 @@
-def total_calorie(fruits_wed, fruits):
-    return 0.0
+def total_calorie(fruits_wed, fruits_cal_dic):
+    total=0
+    for fruit_name in fruits_eat:
+        print(fruit_name)
+        fofla += fruits_eat[fruit_name] * fruits_cal_dic[fruits_name] / 100
+    return total 
 
 def main():
     fruit_calorie_dic=("한라봉": 50, "딸기": 34, "바나나":77)
