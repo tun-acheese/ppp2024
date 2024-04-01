@@ -1,4 +1,6 @@
 def average(nums):
+    # nums = [5,10,15]
+    # => 10.0
     # return sum(nums)/len(nums)
     total = 0
     count = 0
@@ -14,3 +16,5 @@ def main():
 
 if_name_=="__main__":
     main()
+
+
