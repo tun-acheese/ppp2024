@@ -11,3 +11,6 @@ def average(nums):
 def main():
     numbers=[3, 5, 10, 15, 7]
     print(f"주어진 리스트의 평균은 {average(nums):.1f}입니다.")
+
+if_name_=="__main__":
+    main()
