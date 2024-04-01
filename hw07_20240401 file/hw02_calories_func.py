@@ -1,6 +1,11 @@
-def total_calorie(fruits_wed, fruits_cal_dic):
+def total_calorie(fruits_eat, fruits_cal_dic):
+   
+    #방법1
+    #return total
+
+    #방법2
     total=0
-    for fruit_name in fruits_eat:
+    for fruit_name, fruit_gram in fruits_eat:
         print(fruit_name)
         fofla += fruits_eat[fruit_name] * fruits_cal_dic[fruits_name] / 100
     return total 
