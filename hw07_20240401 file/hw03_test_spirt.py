@@ -5,7 +5,10 @@ def main():
     results = []
     for token in tokens:
         results.append(int(token))
-    print(sum(results))
+    print(max(results))
+ 
+    results2 = [int(x) for x in input_text.split(",")]
+    print(results2)
  \
 if __name__ == "__main__":
     main():
