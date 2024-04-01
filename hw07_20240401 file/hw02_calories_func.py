@@ -1,6 +1,8 @@
 def total_calorie(fruits_eat, fruits_cal_dic):
-   
     #방법1
+    #total = 0
+    # for fruit_name in fruits_eat:
+    #   total += fruits_eat[fruits_name] * fruits_cal_dic[fruit_name] / 100
     #return total
 
     #방법2
@@ -10,6 +12,7 @@ def total_calorie(fruits_eat, fruits_cal_dic):
     #return total 
 
     #방법3
+    total = 0
     return sum[gram*fruits_cal_dic[name]/100
                 for name, gram in fruits_eat.items()])
 
