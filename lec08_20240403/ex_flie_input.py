@@ -11,7 +11,7 @@ def read_fiel(filename):
     with open(filename) as f:
         text = f.readline()
         print(f"!{(text}!")
-    return "1 3 5"
+    return "text"
 
 def main(): 
     # input_text = "5 10 3 4 7"
