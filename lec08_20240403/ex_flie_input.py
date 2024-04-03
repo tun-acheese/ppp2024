@@ -8,7 +8,7 @@ def median(nums):
     return nums[len(nums)//2]
 
 def read_fiel(filename):
-    with open(filename) as f""
+    with open(filename) as f:
         text = f.readline()
         print(f"!{(text})")
     return "1 3 5"
