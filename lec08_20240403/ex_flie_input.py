@@ -8,11 +8,14 @@ def median(nums):
     return nums[len(nums)//2]
 
 def read_fiel(filename):
-    return" "
+    with open(filename) as f""
+        text = f.readline()
+        print(f"!{(text})")
+    return "1 3 5"
 
 def main(): 
-    input_text = "5 10 3 4 7"
-    input_text = read_file("numver1.txt")
+    # input_text = "5 10 3 4 7"
+    input_text = read_file("lec05/number1.txt")
 
 
     nums = text2list(input_text)
@@ -24,3 +27,4 @@ def main():
     print("최솟값은 {}".format(min(nums)))
     print("최댓값은 {}".format(max(nums)))
     print(f"리스트의 마지막 값은 {nums[-1]}")
+
