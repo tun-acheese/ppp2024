@@ -10,7 +10,7 @@ def median(nums):
 def read_fiel(filename):
     with open(filename) as f:
         text = f.readline()
-        print(f"!{(text})")
+        print(f"!{(text}!")
     return "1 3 5"
 
 def main(): 
