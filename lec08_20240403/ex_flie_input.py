@@ -6,7 +6,7 @@ def average(nums):
 
 def median(nums):
     sorted_nums = sorted(nums)
-    return nums[len(nums)//2]
+    return sorted_nums[len(nums)//2]
 
 def read_fiel(filename):
     with open(filename) as f:
