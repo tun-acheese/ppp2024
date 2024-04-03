@@ -12,7 +12,7 @@ def read_fiel(filename):
         text = f.readline()
         print(f"!{(text}!")
         return "text"
-    return None
+    return Nonㄷ #생략 가능
     
 def main(): 
     # input_text = "5 10 3 4 7"
