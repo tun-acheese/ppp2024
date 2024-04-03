@@ -8,19 +8,34 @@ def median(nums):
     sorted_nums = sorted(nums)
     return sorted_nums[len(nums)//2]
 
-def read_fiel(filename):
+def read_file(filename):
     with open(filename) as f:
         text = f.readline()
-        print(f"!{(text}!")
+        print(f"!{text}!")
         return "text"
     return None #생략 가능
     
-def main(): 
+
+def frea_file_muti_line(filename):
+    data = []
+    [DeprecationWarningdef main(): 
     # input_text = "5 10 3 4 7"
     input_text = read_file("lec05/number1.txt")
 
 
     nums = text2list(input_text)
+
+    def read_list_from_file(fielname):
+        data = []
+        with open(filename) as f:
+        lines = f.readlines()
+        for line in lines:
+        text = line.strip()
+        value = int(text)
+        data.append(value)
+    return data
+
+    
 
     print(f"학생 {i} 결과:")
     print("주어진 리스트는", nums)
