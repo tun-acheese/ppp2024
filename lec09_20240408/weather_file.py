@@ -9,8 +9,8 @@ def read_tmax(filename):
             results.append(tmax)
     return results
 
-def read_tmin(filename)
-    # return [3,5,5,7,10]]
+def read_weather(filename, col_idx):
+    # return [3,5,5,7,10]
     results = []
     with open(filename) as f:
         lines = f.readlines()

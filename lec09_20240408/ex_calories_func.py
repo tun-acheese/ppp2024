@@ -30,6 +30,7 @@ def read_cal_db(filename):
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 def read_cal_df(filename):
     pass
@@ -52,3 +53,18 @@ if __name__ == "__main__":
     
 =======
 >>>>>>> 3c6d13a (d)
+=======
+
+
+
+
+
+
+
+
+
+def main():
+    #fruits_calorie_dic = {"귤": 39, "딸기": 34, "바나나":77}
+    fruits_calorie_dic = read_cal_db("lec06/calorie_db.csv")
+    
+>>>>>>> 6edf760 (k)
