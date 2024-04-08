@@ -1,5 +1,4 @@
 def total_calorie(fruits_eat, fruits_cal_dic):
-    
     # 방법 1
     # total = 0
     # for fruit_name in fruits_eat:
@@ -17,12 +16,20 @@ def total_calorie(fruits_eat, fruits_cal_dic):
                 for name, gram in fruits_eat.items()])
 
 def read_cal_db(filename):
-    with open(filename) as f:
-           lines = f.readlines()
-           print(1lines[0])
+    database  = {}
+    with open(filename,encoding="utf-8-sig") as f:
+         lines = f.readlines()
+
+         for line in lines[1:]:
+             tokens = lines.split(",")
+             fruit_name = token [0]
+             fruit_cal = int(tokens[1])
+             database[fruit_name] = fruit_cal             
+
     return database
 
 
+<<<<<<< HEAD
 
 def read_cal_df(filename):
     pass
@@ -43,3 +50,5 @@ if __name__ == "__main__":
 
 
     
+=======
+>>>>>>> 3c6d13a (d)
