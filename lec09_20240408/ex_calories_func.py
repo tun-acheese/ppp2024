@@ -1,5 +1,5 @@
 def total_calorie(fruits_eat, fruits_cal_dic):
-                def
+    
     # 방법 1
     # total = 0
     # for fruit_name in fruits_eat:
@@ -15,6 +15,13 @@ def total_calorie(fruits_eat, fruits_cal_dic):
     # 방법 3
     return sum([gram*fruits_cal_dic[name]/100
                 for name, gram in fruits_eat.items()])
+
+def read_cal_db(filename):
+    with open(filename) as f:
+           lines = f.readlines()
+           print(1lines[0])
+    return database
+
 
 
 def read_cal_df(filename):
