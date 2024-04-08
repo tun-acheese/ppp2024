@@ -16,6 +16,10 @@ def total_calorie(fruits_eat, fruits_cal_dic):
                 for name, gram in fruits_eat.items()])
 
 
+def read_cal_df(filename):
+    pass
+
+
 def main():
     fruits_calorie_dic = {"귤": 39, "딸기": 34, "바나나": 77}
     fruits_mon = {"딸기": 300, "귤": 150}
@@ -27,4 +31,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
     
