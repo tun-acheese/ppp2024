@@ -1,4 +1,5 @@
 def total_calorie(fruits_eat, fruits_cal_dic):
+                def
     # 방법 1
     # total = 0
     # for fruit_name in fruits_eat:
