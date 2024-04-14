@@ -10,7 +10,7 @@ def read_average_temperature(filename):
         for line in lines[1:]:
             tokens=line.split(",")
             tavg=float(tokens[4])
-            results.append(tavg)
+            result.append(tavg)
     return results
 
     
