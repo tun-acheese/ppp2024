@@ -21,13 +21,10 @@ def read_cal_db(filename):
 def main():
     fruits_cal_dic=read_cal_db('calorie_db.csv')
 
-    fruits_calorie_dic = {"귤": 39, "딸기": 34, "바나나": 77}
+    fruits_calorie_dic = {"귤": 39, "딸기": 34}
     fruits_mon = {"딸기": 300, "귤": 150}
-    print(total_calorie(fruits_mon, fruits_calorie_dic))
+    print(f'과일 총 칼로리는  {total_calorie(fruits_mon, fruits_calorie_dic)}입니다')
     
-    fruits_wed = {"딸기": 200, "바나나": 300}
-    print(total_calorie(fruits_wed, fruits_calorie_dic))
-
 
 if __name__ == "__main__":
     main()
