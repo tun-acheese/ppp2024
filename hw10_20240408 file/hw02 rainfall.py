@@ -11,6 +11,15 @@ def read_average_temperature(filename):
             tokens=line.split(",")
             tavg=float(tokens[4])
             result.append(tavg)
-    return results
+    return result
 
     
+def main():
+    
+    tavg = read_average_temperature('weather(146)_2022_2022.csv')
+    print(f'평균 기온(일평균 기온의 연평균)은 {sum(tavg)}')
+    
+
+
+if __name__ == "__main__":
+    main():
