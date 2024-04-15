@@ -19,22 +19,33 @@ def count_rainday(rainfall)
     return sum([1 if x >= 5 else 0 for x in rainfall])
 
                 
+
+
+def count_rainday(rainfall):
+    #rain_day = 0
+    #for rain in rainfall:
+    #    if rain >=5:
+    #       rain_day += 1
+     
+    #return rain_day
+    return 
+
+    def longest_rainday(rainfall):
+
 def main():
     wether_filename = "lec10_20240415/weather(146)_2022-2022.csv"
     tavg = read col("lec10_20240415/weather(146)_2022-2022.csv","tavg")
     rainfall = read_col("lec10_20240415/weather(146)_2022-2022.csv","rainfall")
-
-
-def count_rainday(rainfall):
-    rain_day = 0
-    for rain in rainfall:
-        if rain >=5:
         
     print(tavg)
     # 1번 연평균기온
-    print(f"연 평균 기온은 {sum(tavg)/len(tavg)}c 입니다.")
+    print(f"연 평균 기온은 {sum(tavg)/len(tavg):.2f}c 입니다.")
     # 2번 5mm 이상 강우일수
     print(f"5mm이상 강우일수는 [count_rainday(rainfall)}일입니다.")
     # 3번 총 강우량
+    print(f"총 강수량은 {sum(rainflal_:.mm입니다)}")
+
+    #4번 최장연속 강우일수
+    print(f"최장 강우일수는 {longest_rainday(rainfall)}일입니다")
 
 if __name__ == "__main__":
