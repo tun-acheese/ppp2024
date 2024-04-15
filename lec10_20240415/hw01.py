@@ -88,4 +88,5 @@ def main():
 
     # 7번, 6,7,8 강수량
     print(f"여름철 강수량은 {sumifs(rainfall, months, [6,7,,8])}mm입니다")
+    #8번 2021, 2022년 강수량
 if __name__ == "__main__":
