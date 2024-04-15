@@ -46,14 +46,31 @@ def top_rank(values, limit):
     # return sorted(values)[-limit:][::-1]
     return sorted (values, reverse=True)[:limit]
 
-
+def sumifs(rainfall, months, conditions):
+    totla = 0
+    for i in range(len(rainfall)):
+        rain = rainfall[i]
+        month = months[i]
+        if month in donditions:    
+            total += Rain
+    
+    
+    for rain, month in zip(rainfall, months):
+        if month in conditions:
+            total += rain
+            return total
+        
 
 
 def main():
     wether_filename = "lec10_20240415/weather(146)_2022-2022.csv"
     tavg = read col("lec10_20240415/weather(146)_2022-2022.csv","tavg")
     rainfall = read_col("lec10_20240415/weather(146)_2022-2022.csv","rainfall")
-        
+    month = read_col_int("lec10_20240415/weather(146)_2022-2022.csv","month")
+    months = [int(2) for x in months_float]
+    month = read_col_int("lec10_20240415/weather(146)_2022-2022.csv","month")
+    print(months)
+
     print(tavg)
     # 1번 연평균기온
     print(f"연 평균 기온은 {sum(tavg)/len(tavg):.2f}c 입니다.")
@@ -68,4 +85,7 @@ def main():
     print(f"최대 강우일수는 {max_rainfall_event(rainfall):.1f}mm입니다.")
     #6번 가장 더운날 top3
     print(f"가장 더운날 top3는 {top_rank(tmax, 3)}mm입니다.")
+
+    # 7번, 6,7,8 강수량
+    print(f"여름철 강수량은 {sumifs(rainfall, months, [6,7,,8])}mm입니다")
 if __name__ == "__main__":
