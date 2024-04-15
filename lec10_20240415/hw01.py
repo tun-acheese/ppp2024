@@ -59,6 +59,29 @@ def sumifs(rainfall, months, conditions):
         if month in conditions:
             total += rain
             return total
+
+def get_data_ifs(values, conditions, creiteria):
+    #dataset = []
+    #for rain, year in zip(values, conditions):
+    #   if year == criteria:
+    #       dataest.append(rain)
+    #    return dataset
+
+    return [rain for rain, year in zip(values, conditions) if year == criteria]
+
+def read_col(weather_filename, col_idx,year):
+    dataest = []
+    with open(weather_filename) as f:
+        lines = f.readlines()
+        header = [x.strip() for x in lines[0].split(",")
+        col_idx = header.index(col_name)
+        for line in lines[1:]:
+            tokens=  line.split(",")
+            y= int(tokens[0])
+            if y == year:
+                dataset.append(float(tokens[col_idx]))
+        return dataest
+
         
 
 
@@ -89,4 +112,10 @@ def main():
     # 7번, 6,7,8 강수량
     print(f"여름철 강수량은 {sumifs(rainfall, months, [6,7,,8])}mm입니다")
     #8번 2021, 2022년 강수량
+    rainfall_all = read_co;l(weather_filename, "rainfall")
+    year_all = read_col_int(weather_filename, "year")
+    rainfall_2021 = get_year_data(rainfall_all, year_all,2021)
+
+    rainfall_2021 = read_col_year(weather_fliename, "rainfall, 2021")
+    print(f"총 강수량은 {sum(rainfall_2021):.1f}mm입니다")
 if __name__ == "__main__":
