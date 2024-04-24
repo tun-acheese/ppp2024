@@ -9,12 +9,18 @@ def main():
     months = read_col_int(filename, "months")
     days = read_col_int(filename, "day")
 
+    #방법1
     
     temp_diff = tmax - tmin
     for tx, tn in zip(tmax, tmin)
         temp_diff = tmax - tmin
         temp_diff.append(tx-tn)
-  
+    #방법2
+    demp_diff = []
+    for i in range(len(tmax)):
+        temp_diff.append(tmax[i] - tmin[i])
+
+    #방법3
     temp_diff = [tx-tn for tx, tn in zip(tmax, tmin)]
 
     max_idx = 0
