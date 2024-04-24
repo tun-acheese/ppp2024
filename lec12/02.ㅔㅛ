@@ -7,3 +7,8 @@ filename = "./lec08/weather_146_2022.csv"
 with open(filename, "w") as f:
     res = requests.get(url)
     f.write(res.text)
+
+if not os.path.exists(filename):
+    with open(filename,"w") as f:
+        res = requests.get(url)
+        f.write(res.text)
