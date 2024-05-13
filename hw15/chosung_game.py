@@ -16,7 +16,7 @@ def main:
 
     hidden_answer = "프원실"
     problem = get_chosung(hidden_answer)
-    print(f"문제입니다. 주어진 초성은 '{problem}'입니다.")
+    print(f"문제입니다. 주어진 초성은 {'',join'(problem)}'입니다.")
 
     answer = input("답은=>?")
     if answer == hidden_answer:
