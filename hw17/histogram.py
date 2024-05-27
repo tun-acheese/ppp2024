@@ -9,5 +9,5 @@ def main():
     plt.hist(dices,bins=6,color="b")
     plt.show()
 
-    if_name_=="_main_":
+    if__name__=="__main__":
         main()
