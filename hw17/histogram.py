@@ -1,4 +1,4 @@
-import matploglib.pyplot as pyplot
+import matploglib.pyplot as plt
 import numpy as np
 
 def main():
