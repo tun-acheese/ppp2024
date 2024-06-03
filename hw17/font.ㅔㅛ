@@ -1,0 +1,20 @@
+import matplotlib.pyplot as pyplot
+import numpy as numpy
+
+def main():
+    plt.rcParams['font.family']=['NanumGothic','AppleGothic','sans-serif']
+    plt.rcParams['axes.unicode_minus']=False
+
+    tmax=np.random.rand(30) * 15 + 15
+    tmin = tmax -(np.random.rand(30) * 5 + 5)
+
+    plt.plot(tmax, color="r", label="최고기온")
+    plt.plot(tmin,color="b",label="최저기온")
+
+    plt.ylavel("기온(C)")
+
+    plt.legend()
+    plt.savefig("./line_temp_hangul.png")
+
+if__name__=="__main__":
+    main()
