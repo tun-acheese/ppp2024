@@ -1,9 +1,3 @@
-import telegram
- 
-token = '  '
-bot = telegram.Bot(token=token)
-updates = bot.getUpdates()
-for u in updates:
-    print(u.message)
+pip install python-telegram-bot
 
     #7402143139:AAGI7MfbPaAecxEdxEJgD7i--7Vx_o98sc8
