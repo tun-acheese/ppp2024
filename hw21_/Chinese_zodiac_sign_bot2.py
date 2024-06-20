@@ -22,6 +22,5 @@ def handler(update, context):
         bot.send_message(chat_id=id, text="출생년도가 뭐야?") # 답장 보내기 
     elif user_text == "2003년생!": # 사용자가 보낸 메세지가 "뭐해"면?
         bot.send_message(chat_id=id, text="양띠네!? 일단 궁합을 찾기 전에 너의 성격을 먼저 알아야! 너의 성격이 어떤 것 같아??") # 답장 보내기 
-    
 echo_handler = MessageHandler(Filters.text, handler)
 dispatcher.add_handler(echo_handler)
