@@ -6,3 +6,5 @@ id = "7028566921"
 bot = telegram.Bot(token)
 bot.sendMessage(chat_id=id, text="테스트 중입니다.")
     
+echo_handler = MessageHandler(Filters.text, handler)
+dispatcher.add_handler(echo_handler)
