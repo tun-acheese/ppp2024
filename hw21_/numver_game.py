@@ -1,5 +1,5 @@
 import random
-num_randeom = random.randint(1,99)
+num_random = random.randint(1,99)
 coin = 10
 # 반복문 만들기(10번 동안 문제를 냄)
 while coin:
@@ -15,24 +15,14 @@ while coin:
         print("축하합니다. {}이 정답입니다".format(num))
         break
     elif num > num_random:
-        print("{}보다 작습니다. 남은 코인" {}개".format(num,coin))
+        print("{}보다 작습니다. 남은 코인: {}개".format(num,coin))
     elif num < num_random:
         print("{}보다 큽니다. 남은 코인: {}개".format(num,coin))
 
 if num != num_random and coin==0:
     print ("코인이 다 떨어졌습다. 숫자 맞추기 실패입니다.")
 
-#예외
-def input_check(casting = int) -> int:
-    while Tru:
-        try:
-            var = input ("정담은?")
-            var = casting(var)
-            reuturn var
-            break
-        except:
-            print("잘못된 입력입니다. 정수를 입력해주세요.")
-            continue
+    
 #
 def input_check(casting = int) -> int:
     while 1:
@@ -64,7 +54,7 @@ while coin:
         print("{}보다 큽니다. 남은 코인: {}개".format(num,coin))
 
     if num != num_random and coin==0:
-        print("코인이 다 떨어졌습니다. 숫자 맞추기 실패입니다.")import random
+        print("코인이 다 떨어졌습니다. 숫자 맞추기 실패입니다.")
 
 
              
